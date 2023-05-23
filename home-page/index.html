@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vape Shop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../img/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+  <!--BACKGROUND VIDEO -->
+  <video id="video-bg" autoplay muted loop>
+    <source src=".././video/smoke2.mp4" type="video/mp4">
+  </video>
+
+  <!--Up-Button-->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+  
+  <!--HEADER-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img class="icon" src="../img/logo.png" alt="">
+      <button id="navbarToggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--NAVBAR-->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <div style="display: flex; text-align: center;">
+          <li class="nav-item active hover-underline-animation">
+            <a style="color: #fff;" class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item hover-underline-animation">
+            <a style="color: #fff;" class="nav-link" href="#myModal" data-toggle="modal" id="aboutLink">About</a>
+          </li>
+          <li class="nav-item hover-underline-animation">
+            <a style="color: #fff;" class="nav-link" href="#myModal" data-toggle="modal" id="servicesLink">Services</a>
+          </li>
+          <li class="nav-item hover-underline-animation">
+            <a style="color: #fff;" class="nav-link" href="#contact-bottom">Contact</a>
+          </li>
+        </div>
+          <li class="nav-item hover-underline-animation">
+            <a id="login-here" style="display: flex; float: right; color: #fff;" class="nav-link" href="../login/login.html">  Login Here  </a>
+           
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--MAIN-->
+  <section class="hero">
+    <div class="content">
+      <h1>PUFF <br> TO GET A BUFF</h1><br>
+      <a class="scroll-btn" href="#product" id="productLink" style="--color: red;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Go To Product
+      </a>
+    </div>
+    <div class="image-container slide-up float">
+      <img src="../img/vape.png" alt="Image Description">
+    </div>
+  </section>
+
+  <!--VAPE KIT TITLE-->
+  <section id="product"  class="about">
+    
+    <div class="container animate-element">
+      <div class="product-slideup">
+      <p>VAPE KITS</p>
+    </div>
+      
+    </div>
+  </section>
+
+  <!--VAPE KIT PRODUCTS-->
+  <section id="products">
+    
+    <div  class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/1.png" alt="Product 1">
+      <h4>Geekvape Aegis Legend 2 L200 Kit</h4>
+      <p>₱4,348</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+    
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/2.png" alt="Product 1">
+      <h4>Elf Bar FB1000 Pod Kit</h4>
+      <p>₱1,073</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/3.png" alt="Product 1">
+      <h4>Elf Bar Mate 500 Pod Starter Kit</h4>
+      <p>₱590</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/4.png" alt="Product 1">
+      <h4>Uwell Caliburn GK2 Pod Kit</h4>
+      <p>₱1,712</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div  class="product-box animate-element">
+      <div class="product-slideup">
+      <div class="product-slideup">
+      <img src="../product-img/5.png" alt="Product 1">
+      <h4>Smok Vape Pen V2 Kit</h4>
+      <p>₱1,234</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+</div>
+    
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/6.png" alt="Product 1">
+      <h4>Smok Nord 4 Pod Kit</h4>
+      <p>₱2,308</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/7.png" alt="Product 1">
+      <h4>Vaporesso Swag 80W Kit</h4>
+      <p>₱1,288</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/8.png" alt="Product 1">
+      <h4>Geekvape Aegis Boost 2 60W Kit</h4>
+      <p>₱2,710</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/9.png" alt="Product 1">
+      <h4>0mg Nerd Pod 3500 Basic Kit</h4>
+      <p>₱204</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/10.png" alt="Product 1">
+      <h4>Geekvape Aegis Legend 2 L200 Kit</h4>
+      <p>₱4,348</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/11.png" alt="Product 1">
+      <h4>OXVA Xlim SE Pod 25W Kit</h4>
+      <p>₱1,068</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/12.png" alt="Product 1">
+      <h4>Lost Vape Ursa Mini Pod Kit</h4>
+      <p>₱1,496</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+    
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/13.png" alt="Product 1">
+      <h4>Geekvape M100 Aegis Mini 2 100W Kit</h4>
+      <p>₱4,288</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/14.png" alt="Product 1">
+      <h4>Aspire Pockex Kit - Anniversary Edition</h4>
+      <p>₱1,406</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/15.png" alt="Product 1">
+      <h4>OXVA Xlim SE 25W Bonus Kit</h4>
+      <p>₱1,175</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+    <div class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/16.png" alt="Product 1">
+      <h4>Smok Solus G 18W Kit</h4>
+      <p>₱1,014</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-box animate-element">
+    <div class="product-slideup">
+    <img src="../product-img/17.png" alt="Product 1">
+    <h4>Geekvape H45 Classic (Aegis Hero 3)</h4>
+    <p>₱2,179</p>
+    <button class="cart">Add To Cart</button>
+    <button class="buy">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/18.png" alt="Product 1">
+  <h4>Geekvape WENAX K2 Kit</h4>
+  <p>₱1,341</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div class="product-box animate-element">
+  <div class="product-slideup">
+  <img style="background-color: #fff;" src="../product-img/19.png" alt="Product 1">
+  <h4>Geekvape Sonder Q Pod System Kit</h4>
+  <p>₱676</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div class="product-box animate-element">
+  <div class="product-slideup">
+  <img style="background-color: #fff;" src="../product-img/20.png" alt="Product 1">
+  <h4>Geekvape Wenax Q Pod System Kit</h4>
+  <p>₱1,508</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+  </section>
+
+
+  <!--E-Liquids Title-->
+  <section class="about">
+    <div style="margin-top: 200px;" class="container animate-element">
+      <div class="product-slideup">
+      <p>E-Liquids</p>
+    </div>
+      
+    </div>
+  </section>
+
+
+  <!--E-Liquids PRODUCT-->
+  <section id="products">
+    
+    <div  class="product-box animate-element">
+      <div class="product-slideup">
+      <img src="../product-img/21.png" alt="Product 1">
+      <h4>Dreadtac Milk O’s Slt – Wmel*n Cooler</h4>
+      <p>₱250</p>
+      <button class="cart">Add To Cart</button>
+      <button class="buy">Buy Now</button>
+    </div>
+    </div>
+
+  <div  class="product-box animate-element">
+    <div class="product-slideup">
+    <img src="../product-img/22.png" alt="Product 1">
+    <h4>Dreadtac Milk O’s – G Bears</h4>
+    <p>₱220</p>
+    <button class="cart">Add To Cart</button>
+    <button class="buy">Buy Now</button>
+  </div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/23.png" alt="Product 1">
+  <h4>RELX Pod Pro – Fresh Red</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/24.png" alt="Product 1">
+  <h4>Dreadtac Milk O’s Slt – K Dess*rt</h4>
+  <p>₱250</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/25.png" alt="Product 1">
+  <h4>Dreadtac Milk O’s – C Blizzard</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/26.png" alt="Product 1">
+  <h4>Dreadtac Milk O’s – Almond</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/27.png" alt="Product 1">
+  <h4>Dreadtac Milk O’s – K Dess*rt</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/28.png" alt="Product 1">
+  <h4>Dreadtac Milk O’s – Creamy RY4</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/29.png" alt="Product 1">
+  <h4>Dreadtac Milk O’s – Honey Butter</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/30.png" alt="Product 1">
+  <h4>Candy King Imported E-Liquid</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/31.png" alt="Product 1">
+  <h4>Candy King Imported E-Liquid</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/32.png" alt="Product 1">
+  <h4>Ultimate Puff 50/50 3mg</h4>
+  <p>₱118</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/33.png" alt="Product 1">
+  <h4>QCig Premium E-Liquids 10ml 3mg</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/34.png" alt="Product 1">
+  <h4>Vapemate Classic 3mg 10ml</h4>
+  <p>₱220</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/35.png" alt="Product 1">
+  <h4>Ultimate Juice 3mg 10ml</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/36.png" alt="Product 1">
+  <h4>Britannia Gold 3mg 10ml</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/37.png" alt="Product 1">
+  <h4>Oasis By Alfa Labs 3MG 10ML</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/38.png" alt="Product 1">
+  <h4>3mg Dinner Lady 50:50 Ice 10ml</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/39.png" alt="Product 1">
+  <h4>3mg Drip Hacks Salts 10ml Nic Salt</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+
+<div  class="product-box animate-element">
+  <div class="product-slideup">
+  <img src="../product-img/40.png" alt="Product 1">
+  <h4>Kingston 3mg 10ml</h4>
+  <p>₱120</p>
+  <button class="cart">Add To Cart</button>
+  <button class="buy">Buy Now</button>
+</div>
+</div>
+  </section>
+
+
+  
+
+  <!--CONTACT-->
+  <section class="contact">
+    <div id="contact-bottom" class="container">
+      <h2 class="animate-element" style="color: #fff; margin-top: 45px;">Contact Us</h2>
+      <form class="animate-element">
+        <div class="form-group">
+          <input type="text" id="myInput" onkeyup="changeBackgroundColor()" type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="text" id="myInput" onkeyup="changeBackgroundColor()" type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <textarea type="text" id="myInput" onkeyup="changeBackgroundColor()" class="form-control" rows="5" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button> 
+      </form>
+      <div class="social-icons">
+        <a class="animate-element" href="https://www.facebook.com/Markjed1812/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="animate-element" href="https://www.instagram.com/mrkjed_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!--FOOTER-->
+  <section class="footer">
+    
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    
+  </section>
+
+
+  <!-- Modal HTML -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="icon-box">
+            <i class="material-icons">&#xE86B;</i>
+            <i class="material-icons">&#xE86B;</i>
+            <i class="material-icons">&#xE645;</i>
+          </div>
+        </div>
+        <div class="modal-body text-center">
+          <h4>Something went wrong</h4>	
+          <p>This function is under maintenance.</p>
+          <button class="btn btn-primary" data-dismiss="modal">ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <script src="jquery-3.7.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
