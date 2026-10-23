@@ -30,21 +30,6 @@ window.addEventListener('load', function() {
   });
 });
 
-// NAV TOGGLE
-$(document).ready(function() {
-  $('#navbarToggler').click(function() {
-    $('.navbar-collapse').toggleClass('show');
-    $('.navbar-toggler-icon').toggleClass('collapsed');
-  });
-});
-
-$(document).ready(function() {
-  $('#navbarToggler').click(function() {
-    $('.navbar-collapse').toggleClass('show');
-  });
-});
-
-
 // auto scroll
 
 

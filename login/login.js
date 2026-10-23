@@ -71,21 +71,6 @@ function isElementInViewport(element) {
   };
 
 
-  $(document).ready(function() {
-  $('#navbarToggler').click(function() {
-    $('.navbar-collapse').toggleClass('show');
-    $('.navbar-toggler-icon').toggleClass('collapsed');
-  });
-});
-
-$(document).ready(function() {
-  $('#navbarToggler').click(function() {
-    $('.navbar-collapse').toggleClass('show');
-  });
-});
-
-
-
   
     // Reset the input border color on input change
     $('.input-container input').on('input', function() {
